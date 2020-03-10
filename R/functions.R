@@ -37,7 +37,6 @@ graph_pops <- function(pop_group, year = c(1980, 2012)) {
   pop_group %>% 
     filter(Year > year[1], Year < year[2]) %>% 
     ggplot(aes(x = Year, y = sumPops, fill = agegrp, colour = agegrp)) +
-    geom_area(position = position_stack(reverse = TRUE), alpha = 0.8) +
-    theme_sphsu_light()
+    geom_area(position = position_stack(reverse = TRUE), alpha = 0.8) 
   
 }
