@@ -21,3 +21,5 @@ allPops <- countries %>%
 allPops %>% 
   graph_pops() +
   facet_wrap(~ Country, scales = "free")
+
+print("hello!")
